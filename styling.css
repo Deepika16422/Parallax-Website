@@ -1,7 +1,7 @@
 body,html{
     height: 100%;
     margin: 0;
-    font-size: 16px;
+    font-size: 16px;    
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.8em;
@@ -69,4 +69,48 @@ body,html{
     background-color: #282e34;
     color: #ddd;
   }
+/* For tablets and smaller screens (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .text {
+        font-size: 22px;
+        letter-spacing: 5px;
+    }
+    .section {
+        padding: 40px 60px;
+    }
+    .img1, .img2, .img3 {
+        background-attachment: scroll; /* Disable fixed background */
+    }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .text {
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+    .textbg {
+        padding: 15px;
+    }
+    .section {
+        padding: 30px 40px;
+    }
+}
+
+/* For small mobile screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .text {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .textbg {
+        padding: 10px;
+    }
+    .section {
+        padding: 20px;
+    }
+    .img1, .img2, .img3 {
+        min-height: 300px; /* Reduce image height for small screens */
+    }
+}
 
